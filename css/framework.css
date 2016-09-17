@@ -6,16 +6,6 @@
 */
 
 
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Utilities
-- Clearing
-- Media Queries
-*/
-
-
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -48,32 +38,53 @@
         margin-left: 0;
     }
 
-  .one.col                    { width: 4.66666666667%; }
-  .two.col                    { width: 13.3333333333%; }
-  .three.col                  { width: 22%;            }
-  .four.col                   { width: 30.6666666667%; }
-  .five.col                   { width: 39.3333333333%; }
-  .six.col                    { width: 48%;            }
-  .seven.col                  { width: 56.6666666667%; }
-  .eight.col                  { width: 65.3333333333%; }
-  .nine.col                   { width: 74.0%;          }
-  .ten.col                    { width: 82.6666666667%; }
-  .eleven.col                 { width: 91.3333333333%; }
-  .twelve.col                 { width: 100%; margin-left: 0; }
-
-
+    .one.col {
+        width: 4.66666666667%;
+    }
+    .two.col {
+        width: 13.3333333333%;
+    }
+    .three.col {
+        width: 22%;
+    }
+    .four.col {
+        width: 30.6666666667%;
+    }
+    .five.col {
+        width: 39.3333333333%;
+    }
+    .six.col {
+        width: 48%;
+    }
+    .seven.col {
+        width: 56.6666666667%;
+    }
+    .eight.col {
+        width: 65.3333333333%;
+    }
+    .nine.col {
+        width: 74.0%;
+    }
+    .ten.col {
+        width: 82.6666666667%;
+    }
+    .eleven.col {
+        width: 91.3333333333%;
+    }
+    .twelve.col {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
+
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.5em; 
 }
 
 
@@ -81,25 +92,17 @@ body {
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
+.full-width {
   width: 100%;
   box-sizing: border-box; }
-.u-max-full-width {
+.max-full-width {
   max-width: 100%;
   box-sizing: border-box; }
-.u-pull-right {
+.pull-right {
   float: right; }
-.u-pull-left {
+.pull-left {
   float: left; }
 
-
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #E1E1E1; }
 
 
 /* Clearing
@@ -116,25 +119,9 @@ hr {
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
 
+@media (min-width: 40rem) {}
 
-/* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 80rem) {}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 120rem) {}
